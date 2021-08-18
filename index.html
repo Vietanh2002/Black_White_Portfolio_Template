@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Black & White Portfolio Template</title>
+</head>
+<body>
+    <nav class="image">
+        <div class="bgimg"></div>
+    </nav>
+    <nav id="mySidebar">
+        <a href="#" class="icon" onclick="closeSidebar()">
+            <ion-icon name="close" class="icon"></ion-icon>
+        </a>
+        <div class="nav__list">
+            <a href="#" style="--i:1" onclick="closeSidebar()">Home</a>
+            <a href="#portfolio" style="--i:2" onclick="closeSidebar()">Portfolio</a>
+            <a href="#about" style="--i:3" onclick="closeSidebar()">About</a>
+            <a href="#contact" style="--i:4" onclick="closeSidebar()">Contact</a>
+        </div>
+    </nav>
+    <div id="main">
+        <span class="bar-icon" onclick="openSidebar()">
+            <ion-icon name="reorder-three" class="icon"></ion-icon>
+        </span>
+        <div id="header">
+            <h1>
+                <b>Jane Doe</b>
+            </h1>
+            <p>Photographer and Web Designer.</p>
+            <img src="./assets/image/profile_girl.jpeg" alt="" class="img-responsive9">
+            <img src="./assets/image/profile_girl.jpeg" alt="" class="img-responsive6">
+            <button>
+                <ion-icon name="download"></ion-icon>
+                Download Resume
+            </button>
+        </div>
+
+        <div id="container">
+            <div class="content__portfolio" id="portfolio">
+                <h2>My Portfolio</h2>
+                <hr>
+                <div class="port__list">
+                    <div class="image">
+                        <img src="./assets/image/wedding.jpeg" alt="">
+                        <img src="./assets/image/rocks.jpeg" alt="">
+                        <img src="./assets/image/p8.jpeg" alt="">
+                    </div>
+
+                    <div class="image">
+                        <img src="./assets/image/underwater.jpeg" alt="">
+                        <img src="./assets/image/chef.jpeg" alt="">
+                        <img src="./assets/image/wedding.jpeg" alt="">
+                        <img src="./assets/image/p6.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__about" id="about">
+                <div class="about-text">
+                    <h2>About</h2>
+                    <hr>
+                    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <div class="about-skill">
+                    <h3>My Skills</h3>
+                    <p>Photography</p>
+                    <div class="skill-exp">
+                        <div class="exp-pt">95%</div>
+                    </div>
+
+                    <p>Web Design</p>
+                    <div class="skill-exp">
+                        <div class="exp-web">85%</div>
+                    </div>
+
+                    <p>Photoshop</p>
+                    <div class="skill-exp">
+                        <div class="exp-pts">80%</div>
+                    </div>
+                    <br>
+                    <div class="about__achiv">
+                        <div class="achiv__section">
+                            <span>14+</span>
+                            <br>
+                            Partners
+                        </div>
+        
+                        <div class="achiv__section">
+                            <span>55+</span>
+                            <br>
+                            Projects Done
+                        </div>
+        
+                        <div class="achiv__section">
+                            <span>89+</span>
+                            <br>
+                            Happy Clients
+                        </div>
+        
+                        <div class="achiv__section">
+                            <span>150+</span>
+                            <br>
+                            Meetings
+                        </div>
+                    </div>
+
+                    <p>
+                        <button>
+                            <ion-icon name="download"></ion-icon>
+                            Download Resume
+                        </button>
+                    </p>
+                </div>
+                
+                <div class="about-repu">
+                    <h3>My Reputation</h3>
+                    <div class="repu-list">
+                        <img src="./assets/image/avatar_smoke.jpeg" alt="">
+                        <div class="repu-text">
+                            <p>
+                                <span>Chris Fox.</span>
+                                CEO at Mighty Schools.
+                            </p>
+                            <p>John Doe saved us from a web disaster.</p>
+                        </div>
+                    </div>
+                    <div class="repu-list">
+                        <img src="./assets/image/bandmember.jpeg" alt="">
+                        <div class="repu-text">
+                            <p>
+                                <span>Chris Fox.</span>
+                                CEO at Mighty Schools.
+                            </p>
+                            <p>John Doe saved us from a web disaster.</p>
+                        </div>
+                    </div>
+                    <div class="repu-list">
+                        <img src="./assets/image/avatar_g2.jpeg" alt="">
+                        <div class="repu-text">
+                            <p>
+                                <span>Rebecca Flex.</span>
+                                CEO at Company.
+                            </p>
+                            <p>No one is better than John Doe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-course">
+                    <h3>My Price</h3>
+                    <div class="course-list">
+                        <div class="course-info">
+                            <ul>
+                                <li class="head">Basic</li>
+                                <li class="content">Web Design</li>
+                                <li class="content">Photography</li>
+                                <li class="content">1GB Storage</li>
+                                <li class="content">Mail Support</li>
+                                <li class="content">
+                                    <h2>$ 10</h2>
+                                    <span>per month</span>
+                                </li>
+                                <li class="footer">
+                                    <button>Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="course-info">
+                            <ul>
+                                <li class="headcl">Pro</li>
+                                <li class="content">Web Design</li>
+                                <li class="content">Photography</li>
+                                <li class="content">50GB Storage</li>
+                                <li class="content">Endless Support</li>
+                                <li class="content">
+                                    <h2>$ 25</h2>
+                                    <span>per month</span>
+                                </li>
+                                <li class="footer">
+                                    <button>Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__contact" id="contact">
+                <h2>Contact Me</h2>
+                <hr>
+                <div class="contact-section">
+                    <p>
+                        <ion-icon name="flag" class="sec-icon"></ion-icon>
+                        Chicago, US
+                    </p>
+
+                    <p>
+                        <ion-icon name="call" class="sec-icon"></ion-icon>
+                        Phone: +00 151515
+                    </p>
+
+                    <p>
+                        <ion-icon name="mail" class="sec-icon"></ion-icon>
+                        Email: mail@mail.com
+                    </p>
+                </div>
+                <img src="./assets/image/map.jpeg" alt="">
+                <p>Let's get in touch. Send me a message:</p>
+                <form action="" traget="_blank">
+                    <p>
+                        <input type="text" placeholder="Name">
+                    </p>
+                    <p>
+                        <input type="text" placeholder="Email">
+                    </p>
+                    <p>
+                        <input type="text" placeholder="Subject">
+                    </p>
+                    <p>
+                        <input type="text" placeholder="Message">
+                    </p>
+                    <p>
+                        <button>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            Send Message
+                        </button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>   
+    <div id="footer">
+        <div class="footer-logo">
+            <ion-icon name="logo-facebook" class="icon"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon"></ion-icon>
+            <ion-icon name="logo-snapchat" class="icon"></ion-icon>
+            <ion-icon name="logo-pinterest" class="icon"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon"></ion-icon>
+            <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+        </div>
+        <p>
+            Powered by <a href="https://www.facebook.com/vietanh.le.77985741">Viet Anh Le</a>
+        </p>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+</html>

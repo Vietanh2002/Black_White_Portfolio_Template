@@ -11,26 +11,26 @@
     <nav class="image">
         <div class="bgimg"></div>
     </nav>
-    <nav id="mySidebar">
-        <a href="#" class="icon" onclick="closeSidebar()">
-            <ion-icon name="close" class="icon"></ion-icon>
-        </a>
+    <nav id="nav-menu" class="nav__menu">
+        <div class="nav__close" id="nav-close">
+            <ion-icon name="close" class="nav__icon"></ion-icon>
+        </div>
         <div class="nav__list">
-            <a href="#" style="--i:1" onclick="closeSidebar()">Home</a>
-            <a href="#portfolio" style="--i:2" onclick="closeSidebar()">Portfolio</a>
-            <a href="#about" style="--i:3" onclick="closeSidebar()">About</a>
-            <a href="#contact" style="--i:4" onclick="closeSidebar()">Contact</a>
+            <a href="#" style="--i:1" class="nav__link">Home</a>
+            <a href="#portfolio" style="--i:2" class="nav__link">Portfolio</a>
+            <a href="#about" style="--i:3" class="nav__link">About</a>
+            <a href="#contact" style="--i:4" class="nav__link">Contact</a>
         </div>
     </nav>
     <div id="main">
-        <span class="bar-icon" onclick="openSidebar()">
+        <div class="navbar-icon" id="nav-toggle">
             <ion-icon name="reorder-three" class="icon"></ion-icon>
-        </span>
+        </div>
         <div id="header">
-            <h1>
+            <h1 class="header__title">
                 <b>Jane Doe</b>
             </h1>
-            <p>Photographer and Web Designer.</p>
+            <p class="header__description">Photographer and Web Designer.</p>
             <img src="./assets/image/profile_girl.jpeg" alt="" class="img-responsive9">
             <img src="./assets/image/profile_girl.jpeg" alt="" class="img-responsive6">
             <button>
@@ -89,19 +89,19 @@
                             <br>
                             Partners
                         </div>
-        
+
                         <div class="achiv__section">
                             <span>55+</span>
                             <br>
                             Projects Done
                         </div>
-        
+
                         <div class="achiv__section">
                             <span>89+</span>
                             <br>
                             Happy Clients
                         </div>
-        
+
                         <div class="achiv__section">
                             <span>150+</span>
                             <br>
@@ -116,7 +116,7 @@
                         </button>
                     </p>
                 </div>
-                
+
                 <div class="about-repu">
                     <h3>My Reputation</h3>
                     <div class="repu-list">
@@ -234,7 +234,7 @@
                 </form>
             </div>
         </div>
-    </div>   
+    </div>
     <div id="footer">
         <div class="footer-logo">
             <ion-icon name="logo-facebook" class="icon"></ion-icon>
@@ -248,8 +248,11 @@
             Powered by <a href="https://www.facebook.com/vietanh.le.77985741">Viet Anh Le</a>
         </p>
     </div>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="assets/js/sidebar.js"></script>
+    <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
 </body>
 </html>

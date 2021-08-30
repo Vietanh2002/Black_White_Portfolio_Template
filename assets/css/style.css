@@ -62,7 +62,7 @@ nav .bgimg {
     transition: margin-left 0.4s;
 }
 
-#main .bar-icon {
+#main .navbar-icon {
     position: fixed;
     top: 0;
     right: 0;
@@ -72,17 +72,17 @@ nav .bgimg {
     z-index: 2;
 }
 
-#main .bar-icon .icon {
+#main .navbar-icon .icon {
     color: #757575;
     font-size: 50px;
 }
 
-#main .bar-icon:hover {
+#main .navbar-icon:hover {
     background: #ccc;
     cursor: pointer;
 }
 
-#main .bar-icon:hover .icon {
+#main .navbar-icon:hover .icon {
     color: #000;
 }
 
@@ -95,11 +95,11 @@ nav .bgimg {
 }
 
 #header .img-responsive9,
-#header .img-responsive6 { 
+#header .img-responsive6 {
     display: none;
 }
 
-#header h1 {
+#header .header__title {
     font-size: 64px;
 }
 
@@ -117,7 +117,7 @@ nav .bgimg {
     background: #ccc;
 }
             /* =================== Sidebar =================== */
-#mySidebar {
+.nav__menu {
     width: 60%;
     padding-top: 150px;
     font-size: 36px;
@@ -133,7 +133,11 @@ nav .bgimg {
     animation-delay: 0.2s;
 }
 
-#mySidebar .icon {
+.show-menu {
+    display: block;
+}
+
+.nav__menu .nav__icon {
     color: #fff;
     position: absolute;
     top: 0px;
@@ -141,30 +145,31 @@ nav .bgimg {
     font-size: 48px;
     padding: 0px 10px;
     animation: slideRight 0.6s ease-in-out forwards;
+    cursor: pointer;
 }
 
-#mySidebar .icon:hover {
+.nav__menu .nav__icon:hover {
     background: #ccc;
     color: #000;
 }
 
-#mySidebar .nav__list {
+.nav__menu .nav__list {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-#mySidebar a {
+.nav__menu a {
     color: #757575;
     display: inline-block;
     width: 100%;
     padding: 8px 16px;
     opacity: 0;
     animation: slideRight 0.6s ease-in-out forwards;
-    animation-delay: calc(0.3s * var(--i));
+    animation-delay: calc(0.2s * var(--i));
 }
 
-#mySidebar a:hover {
+.nav__menu a:hover {
     color: #fff;
 }
 
@@ -499,7 +504,7 @@ nav .bgimg {
     .content__portfolio .port__list {
         flex-wrap: wrap;
     }
-    
+
     .content__portfolio .port__list .image {
         width: 100%;
     }
@@ -507,7 +512,7 @@ nav .bgimg {
     .content__about .about__achiv {
         flex-wrap: wrap;
     }
-    
+
     .content__about .about__achiv div {
         width: 100%;
     }
@@ -515,7 +520,7 @@ nav .bgimg {
     .content__about .about-course .course-list {
         flex-wrap: wrap;
     }
-    
+
     .content__about .course-list .course-info {
         width: 100%;
     }
